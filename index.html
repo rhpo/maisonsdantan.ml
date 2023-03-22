@@ -157,8 +157,19 @@
     }
 </style>
 
-<!--script>
+<script>
+    
+    var counter = 1;
+
+    document.body.addEventListener('click', () => {
+
+      if (counter === 20) {
+           location.href += "/maisonsDantanLogo.png"
+
+      else counter++;
+    });
+        
     new Audio('https://cdn.discordapp.com/attachments/838449040693133312/941068722490191922/Mon_morceau_11.wav').play();
-</script-->
+</script>
 
 </html>
