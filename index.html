@@ -164,12 +164,14 @@
     document.body.addEventListener('click', () => {
 
       if (counter === 20) {
-           location.href += "/maisonsDantanLogo.png"
-
+          
+          location.href += confirm('(OK): Download White Logo\n(Cancel): Download Black Logo') ? "/maisonsDantanLogoWhite.png" : "/maisonsDantanLogo.png"
+      }
+        
       else counter++;
     });
         
-    new Audio('https://cdn.discordapp.com/attachments/838449040693133312/941068722490191922/Mon_morceau_11.wav').play();
+//     new Audio('https://cdn.discordapp.com/attachments/838449040693133312/941068722490191922/Mon_morceau_11.wav').play();
 </script>
 
 </html>
